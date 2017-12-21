@@ -219,6 +219,20 @@ h3.txt-tl {
     font-size: 24px;
     line-height: 1.35;
 }
+.featurePort {
+    position: relative;
+    float: left;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+.featurePort img {
+    height: 200px;
+    width: 400px;
+}
+.featurePort-text {
+    margin-left: 73px;
+    padding:0px 25px 25px 0px;
+}
 /****/
 .parallax {
     background-attachment: fixed;

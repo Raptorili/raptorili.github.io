@@ -22,7 +22,7 @@ jQuery.fn.loadRepositories = function(username) {
 
     function sortByName(repos) {
         repos.sort(function(a,b) {
-        return b.size - a.size;
+        return a.updated_at < b.updated_at;
        });
     }
 };
