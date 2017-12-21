@@ -181,18 +181,7 @@
                 <h3 class="txt-tl"><b>Retail Industry </b>Six years experience</h3>
                 <p class="txt-para">I worked within the retail industry for six years for several different brands, undertaking a variety of roles from both shop floor to back of house. Within this industry, I learnt to be friendly, approachable and trustworthy for customers as well as meeting targets within deadlines.</p>
               </div>
-              <div class="col-md-9">
-                <div class="col-md-3 col-sm-3">
-                  <img src="img\icons\superdry.png" style="height:100px; width:175px; margin-right:50px "></img>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                  <img src="img\icons\RiverIsland.png" style="height:100px; width:100px;  margin-left:50px; margin-right: 50px "></img>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                  <img src="img\icons\decathlon.png" style="height:100px; width100px;margin-left:50px; margin-right:50px "></img>
-                </div>
-              </div>
-              </div>
+            </div>
 
         </div>
       </div>
@@ -344,26 +333,54 @@
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
             <div class="contact-info">
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <button type="submit" class="btn btn-send">Send</button>
+              <form name="contactform" method="post" action="contactform/send_form_email.php">
+                <table width="450px">
+                  <tr>
+                    <td valign="top">
+                      <label for="first_name">First Name *</label>
+                    </td>
+                      <td valign="top">
+                      <input  type="text" name="first_name" maxlength="50" size="25">
+                     </td>
+                  </tr>
+                  <tr>
+                   <td valign="top">
+                    <label for="last_name">Last Name *</label>
+                   </td>
+                   <td valign="top">
+                    <input  type="text" name="last_name" maxlength="50" size="25">
+                   </td>
+                  </tr>
+                  <tr>
+                   <td valign="top">
+                    <label for="email">Email Address *</label>
+                   </td>
+                   <td valign="top">
+                    <input  type="text" name="email" maxlength="80" size="25">
+                   </td>
+                  </tr>
+                  <tr>
+                   <td valign="top">
+                    <label for="telephone">Telephone Number</label>
+                   </td>
+                   <td valign="top">
+                    <input  type="text" name="telephone" maxlength="20" size="25">
+                   </td>
+                  </tr>
+                  <tr>
+                   <td valign="top">
+                    <label for="comments">Comments *</label>
+                   </td>
+                   <td valign="top">
+                    <textarea  name="comments" maxlength="1000" cols="50" rows="6"></textarea>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td colspan="2" style="text-align:center">
+                    <input type="submit" value="Submit">
+                   </td>
+                  </tr>
+                </table>
               </form>
             </div>
 
